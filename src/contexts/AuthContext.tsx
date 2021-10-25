@@ -62,6 +62,11 @@ export function AuthContextProvider(props: AuthContextProviderProps) {
       })
     }
   }
+// criar um botão para chamar essa função para deslogar.
+// async function signOut() {
+//   await auth.signOut();
+// }
+
   return(
     <AuthContext.Provider value={{ user, signInWithGoogle }}>
       {props.children}
